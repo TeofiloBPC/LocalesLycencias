@@ -12,13 +12,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="133dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="61dp"
         android:text="BIENVENIDO"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,13 +29,14 @@
         android:layout_height="0dp"
         android:layout_marginStart="59dp"
         android:layout_marginEnd="59dp"
-        android:layout_marginBottom="65dp"
+        android:layout_marginBottom="18dp"
         android:background="#54DEEF"
         android:backgroundTint="@color/celeste"
+        android:onClick="Ingresar"
         android:text="INGESAR"
         android:textSize="16sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/btncrearcuenta"
+        app:layout_constraintBottom_toTopOf="@+id/btncontraseña"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3"
@@ -72,26 +73,27 @@
     <Button
         android:id="@+id/btncrearcuenta"
         style="@style/Widget.Material3.Button.ElevatedButton"
-        android:layout_width="213dp"
+        android:layout_width="235dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="111dp"
+        android:layout_marginBottom="107dp"
         android:background="#00FFFFFF"
+        android:onClick="Registrar"
         android:text="¿No tienes una cuenta?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btncontraseña" />
 
     <Button
         android:id="@+id/btncontraseña"
         style="@style/Widget.Material3.Button.TextButton.Dialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="26dp"
         android:backgroundTint="#00404040"
         android:text="¿Olvidate tu contraseña?"
-        app:layout_constraintBottom_toBottomOf="@+id/btncrearcuenta"
-        app:layout_constraintStart_toStartOf="@+id/btncrearcuenta" />
+        app:layout_constraintBottom_toTopOf="@+id/btncrearcuenta"
+        app:layout_constraintStart_toStartOf="@+id/btncrearcuenta"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
